@@ -7,6 +7,9 @@ coverage/
 .env*
 !.env.example
 
+# Next.js build output
+.next/
+
 # File & Folder referensi UI Design
 DesignAcuan Web/
 Design Web UI_*
