@@ -8,6 +8,9 @@
     --color-inamice-blue: #123DB2;
     --color-inamice-orange: #F27D26;
     --color-inamice-bg: #F5F7FA;
+
+    --color-brand-blue: #020548;
+    --color-brand-orange: #EF5D1F;
 }
 
 @layer base {
