@@ -8,6 +8,7 @@ import Speakers from '../components/sections/Speakers';
 import Rundown from '../components/sections/Rundown';
 import Awards from '../components/sections/Awards';
 import Articles from '../components/sections/Articles';
+import MoreSection from '../components/sections/MoreSection';
 
 export default function Home() {
     return (
@@ -21,6 +22,7 @@ export default function Home() {
             <Rundown />
             <Awards />
             <Articles />
+            <MoreSection />
             <Footer />
         </div>
     );
