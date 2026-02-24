@@ -6,3 +6,7 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# File & Folder referensi UI Design
+DesignAcuan Web/
+Design Web UI_*

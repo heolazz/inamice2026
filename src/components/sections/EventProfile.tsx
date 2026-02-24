@@ -50,7 +50,7 @@ const EventProfile = () => {
                     {/* Supported By */}
                     <div className="flex flex-col items-center">
                         <h3 className="text-base lg:text-lg font-extrabold text-inamice-blue mb-4 uppercase tracking-wider text-center">SUPPORTED BY</h3>
-                        <div className="w-full h-80 border-[2px] border-inamice-orange rounded-tl-sm rounded-br-sm rounded-tr-[2.5rem] rounded-bl-[2.5rem] bg-white flex items-center justify-center p-8">
+                        <div className="w-full h-80 border-[3px] border-inamice-orange rounded-tl-sm rounded-br-sm rounded-tr-[2.5rem] rounded-bl-[2.5rem] bg-white flex items-center justify-center p-8">
                             {/* Logo placeholders would go here */}
                         </div>
                     </div>
@@ -58,7 +58,7 @@ const EventProfile = () => {
                     {/* Sponsored By */}
                     <div className="flex flex-col items-center">
                         <h3 className="text-base lg:text-lg font-extrabold text-inamice-blue mb-4 uppercase tracking-wider text-center">SPONSORED BY</h3>
-                        <div className="w-full h-80 border-[2px] border-inamice-orange rounded-tl-sm rounded-br-sm rounded-tr-[2.5rem] rounded-bl-[2.5rem] bg-white flex items-center justify-center p-8">
+                        <div className="w-full h-80 border-[3px] border-inamice-orange rounded-tl-sm rounded-br-sm rounded-tr-[2.5rem] rounded-bl-[2.5rem] bg-white flex items-center justify-center p-8">
                             {/* Logo placeholders would go here */}
                         </div>
                     </div>
@@ -66,7 +66,7 @@ const EventProfile = () => {
                     {/* Media Partner */}
                     <div className="flex flex-col items-center">
                         <h3 className="text-base lg:text-lg font-extrabold text-inamice-blue mb-4 uppercase tracking-wider text-center">MEDIA PARTNER</h3>
-                        <div className="w-full h-80 border-[2px] border-inamice-orange rounded-tl-sm rounded-br-sm rounded-tr-[2.5rem] rounded-bl-[2.5rem] bg-white flex items-center justify-center p-8">
+                        <div className="w-full h-80 border-[3px] border-inamice-orange rounded-tl-sm rounded-br-sm rounded-tr-[2.5rem] rounded-bl-[2.5rem] bg-white flex items-center justify-center p-8">
                             {/* Logo placeholders would go here */}
                         </div>
                     </div>

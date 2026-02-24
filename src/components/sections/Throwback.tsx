@@ -53,10 +53,10 @@ const Throwback = () => {
                                     {icons[idx]}
                                 </div>
 
-                                <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 leading-tight text-left">
+                                <h3 className="text-2xl md:text-3xl drop-shadow-lg font-bold text-white mb-3 leading-tight text-left">
                                     {event.title}
                                 </h3>
-                                <p className="text-white text-sm md:text-base font-medium leading-relaxed text-left max-w-[90%]">
+                                <p className="text-white text-sm md:text-base drop-shadow-lg font-medium leading-relaxed text-left max-w-[90%]">
                                     "{event.theme}"
                                 </p>
                             </div>
