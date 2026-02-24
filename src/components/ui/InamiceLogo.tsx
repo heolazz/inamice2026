@@ -1,9 +1,9 @@
 import React from 'react';
 
 const InamiceLogo = ({ theme = 'light', size = 'sm' }: { theme?: 'light' | 'dark' | 'white', size?: 'sm' | 'lg' | 'xl' }) => {
-    const primaryTextColor = theme === 'light' ? 'text-inamice-blue' : 'text-white';
-    const skylineBgColor = theme === 'light' ? 'bg-inamice-blue' : 'bg-white';
-    const miceTextColor = theme === 'white' ? 'text-white' : 'text-inamice-orange';
+    const primaryTextColor = theme === 'light' ? 'text-brand-blue' : 'text-white';
+    const skylineBgColor = theme === 'light' ? 'bg-brand-blue' : 'bg-white';
+    const miceTextColor = theme === 'white' ? 'text-white' : 'text-brand-orange';
 
     // Dimension tokens mapped by size for precise responsive scaling
     const sizes = {
