@@ -53,7 +53,7 @@ const MoreSection = () => {
                                 <h3 className="font-extrabold text-base tracking-widest uppercase">HOSTED BY</h3>
                             </div>
 
-                            <img src="/img/logo-pnj.jpg" alt="Politeknik Negeri Jakarta" className="w-56 mb-12 drop-shadow-xl" />
+                            <img src="/img/logo-pnj.png" alt="Politeknik Negeri Jakarta" className="w-56 mb-12 drop-shadow-xl" />
 
                             {/* Social Grid PNJ */}
                             <div className="grid grid-cols-3 gap-x-8 gap-y-6">
