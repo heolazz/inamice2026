@@ -30,12 +30,14 @@ const Inamice2026Section = () => {
                     <div className="flex flex-col md:flex-row gap-4 items-stretch justify-center">
                         {/* Left: Image Card */}
                         <div className="md:w-5/12">
-                            <div className="rounded-tr-[5rem] rounded-bl-[5rem] rounded-tl-sm rounded-br-sm overflow-hidden border-[6px] border-inamice-blue shadow-xl h-full min-h-[300px]">
-                                <img
-                                    src="/img/section-inamice.jpg"
-                                    className="w-full h-full object-cover"
-                                    alt="Conference"
-                                />
+                            <div className="rounded-tr-[5rem] rounded-bl-[5rem] rounded-tl-sm rounded-br-sm p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-xl h-full min-h-[300px]">
+                                <div className="w-full h-full rounded-tr-[calc(5rem-3px)] rounded-bl-[calc(5rem-3px)] rounded-tl-none rounded-br-none overflow-hidden h-full">
+                                    <img
+                                        src="/img/section-inamice.jpg"
+                                        className="w-full h-full object-cover"
+                                        alt="Conference"
+                                    />
+                                </div>
                             </div>
                         </div>
 
@@ -65,14 +67,16 @@ const Inamice2026Section = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
                     {/* Left Image (Statue) */}
-                    <div className="h-[400px] rounded-t-full overflow-hidden border-[5px] border-inamice-blue relative shadow-md">
-                        <img
-                            src="/img/img671.jpg"
-                            className="w-full h-full object-cover"
-                            alt="Statue"
-                        />
+                    <div className="h-[400px] rounded-t-full p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-md">
+                        <div className="w-full h-full rounded-t-[calc(9999px-3px)] overflow-hidden">
+                            <img
+                                src="/img/img671.jpg"
+                                className="w-full h-full object-cover"
+                                alt="Statue"
+                            />
+                        </div>
                     </div>
 
                     {/* Center Text */}
@@ -86,12 +90,14 @@ const Inamice2026Section = () => {
                     </div>
 
                     {/* Right Image (Monas) */}
-                    <div className="h-[400px] rounded-t-full overflow-hidden border-[5px] border-inamice-blue relative shadow-md">
-                        <img
-                            src="/img/img677.jpg"
-                            className="w-full h-full object-cover"
-                            alt="Monas"
-                        />
+                    <div className="h-[400px] rounded-t-full p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-md">
+                        <div className="w-full h-full rounded-t-[calc(9999px-3px)] overflow-hidden">
+                            <img
+                                src="/img/img677.jpg"
+                                className="w-full h-full object-cover"
+                                alt="Monas"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,18 +123,18 @@ const Inamice2026Section = () => {
 
                 <div className="flex flex-col md:flex-row gap-12 items-center">
                     {/* Logo Placeholder */}
-                    <div className="md:w-1/3 flex justify-center">
+                    <div className="md:w-5/12 flex justify-center">
                         <div className="flex flex-col items-center">
                             <img
                                 src="/img/jakarta-smart-city.jpg"
                                 alt="Jakarta Smart City Logo"
-                                className="w-full max-w-[250px] object-contain"
+                                className="w-full max-w-[320px] object-contain"
                             />
                         </div>
                     </div>
 
                     {/* Text */}
-                    <div className="md:w-2/3 text-inamice-blue space-y-6 text-justify leading-relaxed font-semibold text-[15px]">
+                    <div className="md:w-7/12 text-inamice-blue space-y-6 text-justify leading-relaxed font-semibold text-[15px]">
                         <p>
                             Global cities such as Incheon and Singapore demonstrate how digital transformation can strengthen the MICE industry through integrated platforms, data utilization, and smart event management. These practices highlight the importance of aligning policy direction, industry readiness, and technology adoption.
                         </p>
