@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Mail, Instagram, Phone, Globe, Linkedin } from 'lucide-react';
+import { MapPin, Mail, Instagram, Phone, Globe, Linkedin, Users, Layout, Award, Megaphone, Store, Compass } from 'lucide-react';
 
 const MoreSection = () => {
     return (
@@ -43,7 +43,7 @@ const MoreSection = () => {
 
                         {/* HOSTED BY */}
                         <div className="flex flex-col items-center w-full">
-                            <div className="bg-[#F27D26] text-white px-8 py-2 inline-block mb-10 rounded shadow-md">
+                            <div className="bg-[#F27D26] text-white px-8 py-2 inline-block mb-10">
                                 <h3 className="font-extrabold text-base tracking-widest uppercase">HOSTED BY</h3>
                             </div>
 
@@ -76,7 +76,7 @@ const MoreSection = () => {
 
                         {/* ORGANIZED BY */}
                         <div className="flex flex-col items-center w-full">
-                            <div className="bg-[#F27D26] text-white px-8 py-2 inline-block mb-10 rounded shadow-md">
+                            <div className="bg-[#F27D26] text-white px-8 py-2 inline-block mb-10">
                                 <h3 className="font-extrabold text-base tracking-widest uppercase">ORGANIZED BY</h3>
                             </div>
 
@@ -106,6 +106,89 @@ const MoreSection = () => {
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Why You Should Sponsor Section */}
+            <div className="w-full max-w-7xl mx-auto px-6 md:px-8 py-24 flex flex-col items-center">
+                {/* Ornament */}
+                <div className="flex items-center gap-1 mb-6">
+                    <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
+                    <img src="/img/acc-orange.jpg" alt="ornament" className="w-4 h-4 object-contain mix-blend-multiply" />
+                    <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
+                </div>
+
+                <div className="bg-[#F27D26] text-white px-8 md:px-12 py-3 mb-12 w-fit text-center">
+                    <h2 className="text-xl md:text-2xl font-black uppercase tracking-widest drop-shadow-sm">WHY YOU SHOULD SPONSOR INAMICE 2026</h2>
+                </div>
+
+                <div className="max-w-5xl text-justify space-y-6 mb-16 px-4">
+                    <p className="text-[#164CDE] leading-relaxed text-lg font-medium">
+                        INAMICE 2026 (Indonesia MICE Conference and Exhibition) is a national platform designed to strengthen Indonesia's MICE ecosystem through innovation, collaboration, and smart industry practices. Bringing together policymakers, industry leaders, associations, and business stakeholders, INAMICE 2026 serves as a strategic meeting point to discuss the future of MICE within the Smart Economy framework.
+                    </p>
+                    <p className="text-[#164CDE] leading-relaxed text-lg font-medium">
+                        By becoming a sponsor, brands gain a valuable opportunity to enhance visibility, build strategic partnerships, and position themselves at the forefront of Indonesia's evolving MICE industry.
+                    </p>
+                </div>
+
+                {/* Benefits Grid */}
+                <div className="w-full max-w-5xl grid grid-cols-1 gap-8 px-4">
+                    {[
+                        {
+                            title: "Strategic Industry Exposure",
+                            desc: "Engage directly with key decision-makers, regulators, industry leaders, and professionals from across the MICE, economic, and financial sectors in a highly targeted environment.",
+                            icon: <Users className="text-white w-8 h-8" />
+                        },
+                        {
+                            title: "Integrated Brand Visibility",
+                            desc: "Gain strong brand exposure through logo placement across official event materials, website, social media content, on-site visuals, and post-event publications.",
+                            icon: <Layout className="text-white w-8 h-8" />
+                        },
+                        {
+                            title: "Thought Leadership & Brand Positioning",
+                            desc: "Position your brand as an industry leader through speaking opportunities, panel discussions, workshops, and participation in Smart MICE and Smart Economy conversations.",
+                            icon: <Award className="text-white w-8 h-8" />
+                        },
+                        {
+                            title: "Digital & Media Amplification",
+                            desc: "Maximize reach through INAMICE's digital marketing campaigns, social media promotions, podcast features, and extensive media partner coverage.",
+                            icon: <Megaphone className="text-white w-8 h-8" />
+                        },
+                        {
+                            title: "On-Site Brand Activation",
+                            desc: "Enhance audience engagement through interactive booths, brand activations, games, and experiential marketing activities during the event.",
+                            icon: <Store className="text-white w-8 h-8" />
+                        },
+                        {
+                            title: "Alignment with Smart MICE Vision",
+                            desc: "Strengthen brand credibility by aligning with INAMICE 2026's Smart MICE positioning, focusing on innovation, sustainability, digitalization, and inclusive economic growth.",
+                            icon: <Compass className="text-white w-8 h-8" />
+                        }
+                    ].map((benefit, idx) => (
+                        <div key={idx} className="group relative p-[3px] bg-gradient-to-b from-inamice-blue to-inamice-orange rounded-tr-[3.5rem] rounded-bl-[3.5rem] shadow-md hover:shadow-xl transition-all duration-300">
+                            <div className="bg-white rounded-tr-[calc(3.5rem-3px)] rounded-bl-[calc(3.5rem-3px)] p-8 flex items-start md:items-center gap-8 h-full">
+                                <div className="flex-shrink-0 w-20 h-20 bg-[#164CDE] rounded-xl flex items-center justify-center">
+                                    {benefit.icon}
+                                </div>
+                                <div className="flex flex-col">
+                                    <h3 className="text-[#164CDE] text-2xl font-black mb-2 leading-tight uppercase tracking-tight">{benefit.title}</h3>
+                                    <p className="text-[#164CDE] leading-relaxed font-medium text-[15px] md:text-lg">
+                                        {benefit.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Final CTA */}
+                <div className="mt-24 flex flex-col items-center group cursor-pointer">
+                    <div className="flex items-center gap-4 bg-white px-8 py-5 rounded-full shadow-[0_10px_40px_-10px_rgba(2,5,72,0.15)] group-hover:shadow-[0_15px_50px_-10px_rgba(2,5,72,0.25)] transition-all duration-300 group-hover:-translate-y-1">
+                        <div className="w-14 h-14 bg-[#1e48cb] rounded-full flex items-center justify-center text-white shadow-lg">
+                            <Phone size={24} fill="currentColor" />
+                        </div>
+                        <span className="text-[#1e48cb] text-xl font-bold tracking-wide">Contact Our Sponsorship Team</span>
                     </div>
                 </div>
             </div>

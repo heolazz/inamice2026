@@ -22,8 +22,8 @@ const Awards = () => {
                     {/* Floating Card with Gradient Stroke */}
                     <div className="absolute -bottom-10 md:-bottom-16 left-1/2 -translate-x-1/2 w-[90%] md:w-[70%] p-[4px] bg-gradient-to-r from-inamice-blue to-inamice-orange rounded-tr-[3rem] rounded-bl-[3rem] rounded-tl-none rounded-br-none shadow-lg z-10">
                         <div className="bg-white rounded-tr-[calc(3rem-4px)] rounded-bl-[calc(3rem-4px)] rounded-tl-none rounded-br-none p-8 md:p-12 text-center h-full">
-                            <h3 className="text-2xl md:text-3xl font-extrabold text-[#5C69DE] mb-4">Awarding Session</h3>
-                            <p className="text-[#5C69DE] text-xs md:text-[15px] font-bold leading-relaxed max-w-3xl mx-auto px-2">
+                            <h3 className="text-2xl md:text-3xl font-extrabold text-[#164CDE] mb-4">Awarding Session</h3>
+                            <p className="text-[#164CDE] text-xs md:text-[15px] font-bold leading-relaxed max-w-3xl mx-auto px-2">
                                 The awarding session aims to recognize outstanding achievements and innovations within Jakarta's MICE industry that align with the theme "Empowering Jakarta's Smart Economy through Digital Transformation in the MICE Industry".
                             </p>
                         </div>
@@ -58,8 +58,8 @@ const Awards = () => {
                             {/* Text Card with Gradient Stroke */}
                             <div className="flex-1 w-full p-[4px] bg-gradient-to-r from-inamice-blue to-inamice-orange rounded-tr-[2.5rem] rounded-bl-[2.5rem] rounded-tl-none rounded-br-none shadow-sm flex flex-col justify-center">
                                 <div className="bg-white rounded-tr-[calc(2.5rem-4px)] rounded-bl-[calc(2.5rem-4px)] rounded-tl-none rounded-br-none p-8 md:p-10 h-full flex flex-col justify-center">
-                                    <h3 className="text-2xl md:text-[1.8rem] font-black text-[#5C69DE] mb-4 leading-snug">{award.title}</h3>
-                                    <p className="text-[#5C69DE] text-base md:text-[17px] font-bold leading-relaxed text-justify md:text-left">
+                                    <h3 className="text-2xl md:text-[1.8rem] font-black text-[#164CDE] mb-4 leading-snug">{award.title}</h3>
+                                    <p className="text-[#164CDE] text-base md:text-[17px] font-bold leading-relaxed text-justify md:text-left">
                                         {award.description}
                                     </p>
                                 </div>
