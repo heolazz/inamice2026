@@ -70,7 +70,7 @@ const Navbar = () => {
                             <a
                                 href={item.href}
                                 className={`text-[15px] font-bold transition-all whitespace-nowrap ${activeSection === item.name
-                                    ? 'bg-[#FFE4D6] text-brand-blue px-6 py-2 rounded-full'
+                                    ? 'bg-brand-active-bg text-brand-blue px-6 py-2 rounded-full'
                                     : 'text-brand-blue hover:text-brand-orange'
                                     }`}
                             >
@@ -81,18 +81,18 @@ const Navbar = () => {
                             <AnimatePresence>
                                 {item.subItems && activeDropdown === item.name && (
                                     <motion.div
-                                        initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                                        initial={{ opacity: 0, y: 5, scale: 0.95 }}
                                         animate={{ opacity: 1, y: 0, scale: 1 }}
-                                        exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                                        exit={{ opacity: 0, y: 5, scale: 0.95 }}
                                         transition={{ duration: 0.2 }}
-                                        className="absolute top-full left-1/2 -translate-x-1/2 mt-6 w-64 bg-white rounded-xl shadow-xl border border-slate-100 overflow-hidden z-50 p-2"
+                                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-xl shadow-xl border border-slate-100 overflow-hidden z-50 p-2"
                                     >
                                         <div className="flex flex-col">
                                             {item.subItems.map((sub, idx) => (
                                                 <a
                                                     key={idx}
                                                     href={sub.href}
-                                                    className="px-6 py-3 text-brand-blue hover:text-brand-orange font-bold text-sm transition-colors rounded-lg hover:bg-slate-50"
+                                                    className="px-6 py-3 text-brand-blue hover:text-brand-orange font-bold text-sm transition-colors rounded-lg hover:bg-brand-blue/5"
                                                 >
                                                     {sub.name}
                                                 </a>
@@ -143,7 +143,7 @@ const Navbar = () => {
                                 <a
                                     href={item.href}
                                     onClick={() => !item.subItems && setIsMobileMenuOpen(false)}
-                                    className={`text-base font-bold p-2 ${item.name === 'About' ? 'text-brand-orange px-6 py-2 bg-[#FFE4D6] rounded-full w-fit' : 'text-brand-blue'}`}
+                                    className={`text-base font-bold p-2 ${item.name === 'About' ? 'text-brand-orange px-6 py-2 bg-brand-active-bg rounded-full w-fit' : 'text-brand-blue'}`}
                                 >
                                     {item.name}
                                 </a>

@@ -11,6 +11,7 @@
 
     --color-brand-blue: #020548;
     --color-brand-orange: #EF5D1F;
+    --color-brand-active-bg: #FFE9DB;
 }
 
 @layer base {
