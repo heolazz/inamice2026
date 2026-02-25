@@ -4,44 +4,38 @@ import { MapPin, Mail, Instagram, Phone, Globe, Linkedin } from 'lucide-react';
 const MoreSection = () => {
     return (
         <section id="more" className="bg-white pt-32 lg:pt-40 pb-20">
-            {/* Header CONTACT */}
-            <div className="flex flex-col items-center justify-center mb-16 px-4">
-                <div className="flex items-center gap-1 mb-2">
-                    <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
-                    <img src="/img/acc-orange.jpg" alt="ornament" className="w-4 h-4 object-contain mix-blend-multiply" />
-                    <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
-                </div>
-                <div className="bg-[#1e48cb] text-white px-10 py-2 w-full max-w-sm text-center shadow-md">
-                    <h2 className="text-xl md:text-2xl font-black uppercase tracking-widest drop-shadow-sm">CONTACT</h2>
-                </div>
-                <div className="flex items-center gap-1 mt-2">
-                    <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
-                    <img src="/img/acc-orange.jpg" alt="ornament" className="w-4 h-4 object-contain mix-blend-multiply" />
-                    <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
+            {/* Contact Area with separate background */}
+            <div className="mx-4 md:mx-12 bg-gradient-to-t from-[#7CA8E8]/40 to-white pt-24 pb-20 mb-16 flex flex-col items-center rounded-b-[3rem] md:rounded-b-[5rem] shadow-sm">
+                <div className="flex flex-col items-center justify-center px-4">
+                    <div className="flex items-center gap-1 mb-5">
+                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
+                        <img src="/img/acc-orange.jpg" alt="ornament" className="w-4 h-4 object-contain mix-blend-multiply" />
+                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
+                    </div>
+                    <div className="bg-[#1e48cb] text-white px-12 py-3 w-fit text-center shadow-lg">
+                        <h2 className="text-xl md:text-2xl font-black uppercase tracking-widest drop-shadow-sm">CONTACT</h2>
+                    </div>
+                    <div className="flex items-center gap-1 mt-5">
+                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
+                        <img src="/img/acc-orange.jpg" alt="ornament" className="w-4 h-4 object-contain mix-blend-multiply" />
+                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
+                    </div>
                 </div>
             </div>
 
             {/* Content Section */}
-            <div className="relative w-full max-w-5xl mx-auto flex flex-col items-center overflow-hidden">
+            <div className="relative w-full flex flex-col items-center">
                 {/* Background Pattern / Watermark could go here */}
 
                 {/* Top Gradient Box that hosts everything */}
-                <div className="w-full relative px-4 md:px-8 flex flex-col items-center bg-gradient-to-b from-[#7CA8E8]/70 via-[#e2ebf7]/40 to-white rounded-t-[3rem] pt-16 pb-24 border-t-4 border-[#7CA8E8]/50 shadow-[inset_0_20px_40px_-20px_rgba(0,0,0,0.1)]">
+                <div className="w-full relative px-4 md:px-8 flex flex-col items-center bg-gradient-to-b from-[#7CA8E8]/70 via-[#e2ebf7]/40 to-white pt-16 pb-24 border-t-4 border-[#7CA8E8]/50 shadow-[inset_0_20px_40px_-20px_rgba(0,0,0,0.1)]">
 
                     {/* Motif Ornaments */}
-                    <div className="absolute top-10 left-4 md:left-20 opacity-20 pointer-events-none hidden md:block">
-                        {/* Dummy SVG ornament representing the floral pattern on left */}
-                        <svg width="200" height="200" viewBox="0 0 100 100" className="text-[#1a4dc3] fill-current">
-                            <path d="M50 0 C60 20, 80 40, 100 50 C80 60, 60 80, 50 100 C40 80, 20 60, 0 50 C20 40, 40 20, 50 0 Z" />
-                            <path d="M50 20 C55 35, 65 45, 80 50 C65 55, 55 65, 50 80 C45 65, 35 55, 20 50 C35 45, 45 35, 50 20 Z" fill="#fff" />
-                        </svg>
+                    <div className="absolute top-10 left-4 md:left-20 opacity-10 pointer-events-none hidden md:block">
+                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-64 h-64 object-contain mix-blend-multiply" />
                     </div>
-                    <div className="absolute bottom-10 right-4 md:right-20 opacity-20 pointer-events-none hidden md:block">
-                        {/* Dummy SVG ornament representing the floral pattern on right bottom */}
-                        <svg width="250" height="250" viewBox="0 0 100 100" className="text-[#1a4dc3] fill-current">
-                            <path d="M50 0 C60 20, 80 40, 100 50 C80 60, 60 80, 50 100 C40 80, 20 60, 0 50 C20 40, 40 20, 50 0 Z" />
-                            <path d="M50 20 C55 35, 65 45, 80 50 C65 55, 55 65, 50 80 C45 65, 35 55, 20 50 C35 45, 45 35, 50 20 Z" fill="#fff" />
-                        </svg>
+                    <div className="absolute bottom-10 right-4 md:right-20 opacity-10 pointer-events-none hidden md:block">
+                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-80 h-80 object-contain mix-blend-multiply" />
                     </div>
 
                     {/* Flex Container for Hosted & Organized */}
