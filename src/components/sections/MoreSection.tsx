@@ -53,10 +53,10 @@ const MoreSection = () => {
                                 <h3 className="font-extrabold text-base tracking-widest uppercase">HOSTED BY</h3>
                             </div>
 
-                            <img src="/img/logo-pnj.png" alt="Politeknik Negeri Jakarta" className="w-56 mb-12 drop-shadow-xl" />
+                            <img src="/img/logo-pnj.png" alt="Politeknik Negeri Jakarta" className="w-72 mb-12 drop-shadow-2xl" />
 
                             {/* Social Grid PNJ */}
-                            <div className="grid grid-cols-3 gap-x-8 gap-y-6">
+                            <div className="grid grid-cols-3 gap-x-16 gap-y-10">
                                 <a href="#" className="w-14 h-14 rounded-full bg-[#1e48cb] flex items-center justify-center text-white cursor-pointer hover:bg-inamice-orange transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-200">
                                     <MapPin size={24} />
                                 </a>
