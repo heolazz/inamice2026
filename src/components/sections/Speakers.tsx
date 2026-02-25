@@ -70,7 +70,7 @@ const Speakers = () => {
                             </div>
                         </div>
                         <h4 className="text-3xl font-black text-inamice-blue mt-4">{keynote?.name}</h4>
-                        <p className="text-inamice-blue text-lg font-extrabold uppercase mb-4 tracking-wide">{keynote?.role}</p>
+                        <p className="text-inamice-blue text-md font-medium mb-4 tracking-wide">{keynote?.role}</p>
                         <p className="text-inamice-blue text-md text-justify max-w-xl px-4 leading-relaxed opacity-80 mb-6 font-medium">
                             The keynote speech sets the strategic direction of the forum by outlining the Government of Jakarta’s commitment to strengthening the city’s urban economy. Rather than addressing technical aspects of the MICE industry, this session highlights why MICE matters within Jakarta’s economic development agenda and emphasizes the importance of cross-sector collaboration in supporting its growth.
                         </p>
