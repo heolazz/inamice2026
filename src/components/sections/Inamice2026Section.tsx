@@ -21,8 +21,8 @@ const Inamice2026Section = () => {
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-white drop-shadow-md max-w-4xl mx-auto leading-tight">
-                            “Empowering Jakarta’s Smart Economy through<br />
+                        <h2 className="text-2xl md:text-4xl font-bold text-white drop-shadow-md max-w-4xl mx-auto leading-tight px-4 md:px-0">
+                            “Empowering Jakarta’s Smart Economy through <br className="hidden md:block" />
                             Digital Transformation in the MICE Industry”
                         </h2>
                     </div>
@@ -30,8 +30,8 @@ const Inamice2026Section = () => {
                     <div className="flex flex-col md:flex-row gap-4 items-stretch justify-center">
                         {/* Left: Image Card */}
                         <div className="md:w-5/12">
-                            <div className="rounded-tr-[5rem] rounded-bl-[5rem] rounded-tl-sm rounded-br-sm p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-xl h-full min-h-[300px]">
-                                <div className="w-full h-full rounded-tr-[calc(5rem-3px)] rounded-bl-[calc(5rem-3px)] rounded-tl-none rounded-br-none overflow-hidden h-full">
+                            <div className="rounded-tr-[5rem] rounded-bl-[5rem] rounded-tl-sm rounded-br-sm p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-xl h-full min-h-[250px] md:min-h-[300px] flex">
+                                <div className="w-full flex-1 rounded-tr-[calc(5rem-3px)] rounded-bl-[calc(5rem-3px)] rounded-tl-none rounded-br-none overflow-hidden">
                                     <img
                                         src="/img/section-inamice.jpg"
                                         className="w-full h-full object-cover"
@@ -63,7 +63,7 @@ const Inamice2026Section = () => {
                         <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
                     </div>
                     <div className="bg-inamice-orange text-white px-8 py-2 w-full max-w-md text-center">
-                        <h3 className="text-xl font-bold uppercase tracking-widest">WHY THIS THEME MATTERS</h3>
+                        <h3 className="text-lg md:text-xl font-bold uppercase tracking-widest">WHY THIS THEME MATTERS</h3>
                     </div>
                 </div>
 
@@ -111,8 +111,8 @@ const Inamice2026Section = () => {
                         <img src="/img/acc-orange.jpg" alt="ornament" className="w-4 h-4 object-contain mix-blend-multiply" />
                         <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
                     </div>
-                    <div className="bg-inamice-orange text-white px-8 py-2 text-center w-full md:w-auto">
-                        <h3 className="text-lg md:text-xl font-bold uppercase tracking-widest whitespace-nowrap">COLLABORATION WITH JAKARTA SMART CITY</h3>
+                    <div className="bg-inamice-orange text-white px-4 py-3 md:px-8 md:py-2 text-center w-full md:w-auto">
+                        <h3 className="text-[15px] sm:text-lg md:text-xl font-bold uppercase tracking-widest whitespace-normal md:whitespace-nowrap">COLLABORATION WITH JAKARTA SMART CITY</h3>
                     </div>
                     <div className="flex items-center gap-1 hidden md:flex">
                         <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
@@ -147,7 +147,7 @@ const Inamice2026Section = () => {
 
             {/* 4. Expected Outcomes */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-32">
-                <h2 className="text-3xl font-extrabold text-inamice-blue mb-10">EXPECTED OUTCOMES</h2>
+                <h2 className="text-2xl md:text-3xl font-extrabold text-inamice-blue mb-10 text-center md:text-left">EXPECTED OUTCOMES</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {[

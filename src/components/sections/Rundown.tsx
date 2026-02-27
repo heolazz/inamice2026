@@ -21,8 +21,8 @@ const Rundown = () => {
                     </div>
                 </div>
 
-                <div className="overflow-x-auto pb-4">
-                    <table className="w-full text-left border-separate" style={{ borderSpacing: "4px 0" }}>
+                <div className="w-full overflow-x-auto pb-4 max-w-full">
+                    <table className="w-full min-w-[600px] text-left border-separate" style={{ borderSpacing: "4px 0" }}>
                         <thead>
                             <tr className="text-white text-center">
                                 <th className="p-0 w-[20%]">

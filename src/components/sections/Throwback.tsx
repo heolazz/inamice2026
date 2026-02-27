@@ -9,12 +9,12 @@ const Throwback = () => {
     const icons = [<Settings size={48} />, <Globe size={48} />, <Leaf size={48} />];
 
     return (
-        <section id="about" className="relative pt-24 text-white bg-gradient-to-b from-inamice-blue to-white">
-            <div className="relative z-10 section-container">
+        <section id="about" className="relative pt-44 sm:pt-32 md:pt-24 text-white bg-gradient-to-b from-inamice-blue to-white">
+            <div className="relative z-10 section-container px-4">
                 {/* Header Section */}
                 <div className="flex flex-col lg:flex-row justify-between items-start mb-16 gap-12">
                     <div className="lg:w-1/3">
-                        <h2 className="text-4xl md:text-5xl font-bold leading-tight drop-shadow-lg">
+                        <h2 className="text-4xl md:text-5xl font-bold leading-tight drop-shadow-lg text-left lg:text-left">
                             Throwback<br />INAMICE
                         </h2>
                     </div>

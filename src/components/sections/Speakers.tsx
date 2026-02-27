@@ -57,7 +57,7 @@ const Speakers = () => {
 
                     <div className="flex flex-col items-center mb-12">
                         {/* Keynote Frame Wrapper */}
-                        <div className="relative w-[350px] h-[450px] mb-8">
+                        <div className="relative w-[280px] h-[360px] md:w-[350px] md:h-[450px] mb-8">
                             {/* The Gradient Frame */}
                             <div className="absolute inset-0 bg-gradient-to-r from-inamice-blue to-inamice-orange rounded-tr-[5rem] rounded-bl-[5rem] rounded-tl-none rounded-br-none" />
                             {/* The Inner "Gap" and Image Box */}
@@ -90,7 +90,7 @@ const Speakers = () => {
                         {plenary1.map(speaker => (
                             <div key={speaker.name} className="flex flex-col items-center">
                                 {/* Plenary Card Wrapper */}
-                                <div className="relative w-[320px] h-[400px] mb-6">
+                                <div className="relative w-[280px] h-[350px] md:w-[320px] md:h-[400px] mb-6">
                                     {/* The Gradient Frame */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-inamice-blue to-inamice-orange rounded-tr-[4rem] rounded-bl-[4rem] rounded-tl-none rounded-br-none" />
                                     {/* The Inner Image Box with intentional white gap */}
@@ -103,7 +103,7 @@ const Speakers = () => {
                                     </div>
                                 </div>
                                 {/* Orange Label Box */}
-                                <div className="w-[320px] bg-inamice-orange text-white py-3.5 px-2 mb-6 text-center">
+                                <div className="w-[280px] md:w-[320px] bg-inamice-orange text-white py-3.5 px-2 mb-6 text-center">
                                     <h4 className="text-[15px] md:text-[17px] font-black uppercase tracking-wide whitespace-normal leading-tight">{speaker.name}</h4>
                                 </div>
                                 {/* Speaker Info */}
@@ -130,7 +130,7 @@ const Speakers = () => {
                         {plenary2.map((speaker, idx) => (
                             <div key={idx} className="flex flex-col items-center">
                                 {/* Plenary Card Wrapper */}
-                                <div className="relative w-[320px] h-[400px] mb-6">
+                                <div className="relative w-[280px] h-[350px] md:w-[320px] md:h-[400px] mb-6">
                                     {/* The Gradient Frame */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-inamice-blue to-inamice-orange rounded-tr-[4rem] rounded-bl-[4rem] rounded-tl-none rounded-br-none" />
                                     {/* The Inner Image Box with Gap */}
@@ -150,7 +150,7 @@ const Speakers = () => {
                                     </div>
                                 </div>
                                 {/* Orange Label Box */}
-                                <div className="w-[320px] bg-inamice-orange text-white py-3.5 px-2 mb-6 text-center">
+                                <div className="w-[280px] md:w-[320px] bg-inamice-orange text-white py-3.5 px-2 mb-6 text-center">
                                     <h4 className="text-[15px] md:text-[17px] font-black uppercase tracking-wide whitespace-normal leading-tight">{speaker.name}</h4>
                                 </div>
                                 {/* Speaker Info */}

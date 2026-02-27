@@ -50,7 +50,7 @@ const MoreSection = () => {
                             <img src="/img/logo-pnj.png" alt="Politeknik Negeri Jakarta" className="w-72 mb-12 drop-shadow-2xl" />
 
                             {/* Social Grid PNJ */}
-                            <div className="grid grid-cols-3 gap-x-16 gap-y-10">
+                            <div className="grid grid-cols-3 gap-x-8 gap-y-8 md:gap-x-16 md:gap-y-10">
                                 <a href="#" className="w-14 h-14 rounded-full bg-[#1e48cb] flex items-center justify-center text-white cursor-pointer hover:bg-inamice-orange transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-200">
                                     <MapPin size={24} />
                                 </a>
@@ -83,7 +83,7 @@ const MoreSection = () => {
                             <img src="/img/logo-mice.png" alt="MICE" className="w-72 mb-12 rounded-md" />
 
                             {/* Social Grid MICE */}
-                            <div className="grid grid-cols-3 gap-x-16 gap-y-10">
+                            <div className="grid grid-cols-3 gap-x-8 gap-y-8 md:gap-x-16 md:gap-y-10">
                                 <a href="#" className="w-14 h-14 rounded-full bg-[#1e48cb] flex items-center justify-center text-white cursor-pointer hover:bg-inamice-orange transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-200">
                                     <MapPin size={24} />
                                 </a>
@@ -167,13 +167,13 @@ const MoreSection = () => {
                         }
                     ].map((benefit, idx) => (
                         <div key={idx} className="group relative p-[3px] bg-gradient-to-b from-inamice-blue to-inamice-orange rounded-tr-[3.5rem] rounded-bl-[3.5rem] shadow-md hover:shadow-xl transition-all duration-300">
-                            <div className="bg-white rounded-tr-[calc(3.5rem-3px)] rounded-bl-[calc(3.5rem-3px)] p-8 flex items-start md:items-center gap-8 h-full">
-                                <div className="flex-shrink-0 w-20 h-20 bg-[#164CDE] rounded-xl flex items-center justify-center">
+                            <div className="bg-white rounded-tr-[calc(3.5rem-3px)] rounded-bl-[calc(3.5rem-3px)] p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8 h-full text-center md:text-left">
+                                <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 bg-[#164CDE] rounded-xl flex items-center justify-center">
                                     {benefit.icon}
                                 </div>
                                 <div className="flex flex-col">
-                                    <h3 className="text-[#164CDE] text-2xl font-black mb-2 leading-tight uppercase tracking-tight">{benefit.title}</h3>
-                                    <p className="text-[#164CDE] leading-relaxed font-medium text-[15px] md:text-lg">
+                                    <h3 className="text-[#164CDE] text-xl md:text-2xl font-black mb-2 leading-tight uppercase tracking-tight">{benefit.title}</h3>
+                                    <p className="text-[#164CDE] leading-relaxed font-medium text-[14px] md:text-[15px] lg:text-lg">
                                         {benefit.desc}
                                     </p>
                                 </div>
@@ -183,12 +183,12 @@ const MoreSection = () => {
                 </div>
 
                 {/* Final CTA */}
-                <div className="mt-24 flex flex-col items-center group cursor-pointer">
-                    <div className="flex items-center gap-4 bg-white px-8 py-5 rounded-full shadow-[0_10px_40px_-10px_rgba(2,5,72,0.15)] group-hover:shadow-[0_15px_50px_-10px_rgba(2,5,72,0.25)] transition-all duration-300 group-hover:-translate-y-1">
-                        <div className="w-14 h-14 bg-[#1e48cb] rounded-full flex items-center justify-center text-white shadow-lg">
+                <div className="mt-24 px-4 flex flex-col items-center group cursor-pointer w-full text-center">
+                    <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4 bg-white px-6 md:px-8 py-4 md:py-5 rounded-3xl md:rounded-full shadow-[0_10px_40px_-10px_rgba(2,5,72,0.15)] group-hover:shadow-[0_15px_50px_-10px_rgba(2,5,72,0.25)] transition-all duration-300 group-hover:-translate-y-1 w-full max-w-sm sm:max-w-max justify-center">
+                        <div className="w-12 h-12 md:w-14 md:h-14 bg-[#1e48cb] rounded-full flex items-center justify-center text-white shadow-lg flex-shrink-0">
                             <Phone size={24} fill="currentColor" />
                         </div>
-                        <span className="text-[#1e48cb] text-xl font-bold tracking-wide">Contact Our Sponsorship Team</span>
+                        <span className="text-[#1e48cb] text-base sm:text-lg md:text-xl font-bold tracking-wide leading-tight">Contact Our Sponsorship Team</span>
                     </div>
                 </div>
             </div>
@@ -258,12 +258,12 @@ const MoreSection = () => {
                 </div>
 
                 {/* Final CTA */}
-                <div className="mt-24 flex flex-col items-center group cursor-pointer">
-                    <div className="flex items-center gap-4 bg-white px-8 py-5 rounded-full shadow-[0_10px_40px_-10px_rgba(2,5,72,0.15)] group-hover:shadow-[0_15px_50px_-10px_rgba(2,5,72,0.25)] transition-all duration-300 group-hover:-translate-y-1">
-                        <div className="w-14 h-14 bg-[#1e48cb] rounded-full flex items-center justify-center text-white shadow-lg">
+                <div className="mt-24 px-4 flex flex-col items-center group cursor-pointer w-full text-center">
+                    <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4 bg-white px-6 md:px-8 py-4 md:py-5 rounded-3xl md:rounded-full shadow-[0_10px_40px_-10px_rgba(2,5,72,0.15)] group-hover:shadow-[0_15px_50px_-10px_rgba(2,5,72,0.25)] transition-all duration-300 group-hover:-translate-y-1 w-full max-w-sm sm:max-w-max justify-center">
+                        <div className="w-12 h-12 md:w-14 md:h-14 bg-[#1e48cb] rounded-full flex items-center justify-center text-white shadow-lg flex-shrink-0">
                             <Phone size={24} fill="currentColor" />
                         </div>
-                        <span className="text-[#1e48cb] text-xl font-bold tracking-wide">Contact Our Media Partner Team</span>
+                        <span className="text-[#1e48cb] text-base sm:text-lg md:text-xl font-bold tracking-wide leading-tight">Contact Our Media Partner Team</span>
                     </div>
                 </div>
             </div>
