@@ -28,11 +28,11 @@ const InamiceLogo = ({ theme = 'light', size = 'sm' }: { theme?: 'light' | 'dark
             mbTopRow: 'mb-[-1px] md:mb-[-2px]'
         },
         xl: {
-            the9th: 'text-[0.8rem] sm:text-[1.2rem] md:text-[2.3rem]',
-            skylineH: 'h-[0.8rem] sm:h-[1.2rem] md:h-[2.1rem]',
-            inaMice: 'text-[3rem] sm:text-[4.5rem] md:text-[8rem]',
-            year: 'text-[0.6rem] sm:text-[0.9rem] md:text-[1.67rem]',
-            bottom: 'text-[0.5rem] sm:text-[0.75rem] md:text-[1.43rem]',
+            the9th: 'text-[1rem] sm:text-[1.2rem] md:text-[2.3rem]',
+            skylineH: 'h-[1rem] sm:h-[1.2rem] md:h-[2.1rem]',
+            inaMice: 'text-[3.6rem] sm:text-[4.5rem] md:text-[8rem]',
+            year: 'text-[0.75rem] sm:text-[0.9rem] md:text-[1.67rem]',
+            bottom: 'text-[0.6rem] sm:text-[0.75rem] md:text-[1.43rem]',
             gap: 'mr-1 md:mr-3',
             bottomMt: 'mt-1 md:mt-3',
             mbTopRow: 'mb-0 md:mb-[-4px]'
