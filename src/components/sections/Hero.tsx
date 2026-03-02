@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import InamiceLogo from '../ui/InamiceLogo';
 
 const Hero = () => {
@@ -15,10 +16,12 @@ const Hero = () => {
                             maskImage: 'linear-gradient(to bottom, black 0%, transparent 85%)'
                         }}
                     >
-                        <img
+                        <Image
                             src="/img/section-about.jpg"
-                            className="w-full h-full object-cover blur-[2px] opacity-70 mix-blend-luminosity"
                             alt="INAMICE 2026 Event"
+                            fill
+                            className="object-cover blur-[2px] opacity-70 mix-blend-luminosity"
+                            priority
                         />
                     </div>
 
