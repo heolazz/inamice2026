@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Instagram, Linkedin } from 'lucide-react';
 import { NAVIGATION } from '../../constants';
@@ -9,48 +9,61 @@ import InamiceLogo from '../ui/InamiceLogo';
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isHidden, setIsHidden] = useState(false);
-    const [lastScrollY, setLastScrollY] = useState(0);
+    const lastScrollY = useRef(0);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const [activeSection, setActiveSection] = useState('About');
 
     useEffect(() => {
+        let ticking = false;
+
         const handleScroll = () => {
-            const currentScrollY = window.scrollY;
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const currentScrollY = window.scrollY;
 
-            // Existing navbar hide/show logic
-            if (currentScrollY > lastScrollY && currentScrollY > 100) {
-                setIsHidden(true);
-            } else {
-                setIsHidden(false);
+                    // Existing navbar hide/show logic
+                    if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+                        setIsHidden(prev => prev !== true ? true : prev);
+                    } else {
+                        setIsHidden(prev => prev !== false ? false : prev);
+                    }
+
+                    setIsScrolled(prev => {
+                        const nextScrolled = currentScrollY > 50;
+                        return prev !== nextScrolled ? nextScrolled : prev;
+                    });
+
+                    lastScrollY.current = currentScrollY;
+
+                    // Active section tracking
+                    const sections = NAVIGATION.map(item => {
+                        const id = item.href.replace('#', '');
+                        const element = document.getElementById(id);
+                        if (element) {
+                            return { name: item.name, offset: element.offsetTop - 150 };
+                        }
+                        return null;
+                    }).filter(Boolean);
+
+                    const scrollPosition = window.scrollY;
+                    const currentSection = sections!.reduce((acc, section) => {
+                        if (scrollPosition >= section!.offset) {
+                            return section!.name;
+                        }
+                        return acc;
+                    }, 'About');
+
+                    setActiveSection(prev => prev !== currentSection ? currentSection : prev);
+                    ticking = false;
+                });
+                ticking = true;
             }
-            setIsScrolled(currentScrollY > 50);
-            setLastScrollY(currentScrollY);
-
-            // Active section tracking
-            const sections = NAVIGATION.map(item => {
-                const id = item.href.replace('#', '');
-                const element = document.getElementById(id);
-                if (element) {
-                    return { name: item.name, offset: element.offsetTop - 150 };
-                }
-                return null;
-            }).filter(Boolean);
-
-            const scrollPosition = window.scrollY;
-            const currentSection = sections!.reduce((acc, section) => {
-                if (scrollPosition >= section!.offset) {
-                    return section!.name;
-                }
-                return acc;
-            }, 'About');
-
-            setActiveSection(currentSection);
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [lastScrollY]);
+    }, []);
 
     return (
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 shadow-md py-3' : 'bg-transparent py-6'} ${isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
