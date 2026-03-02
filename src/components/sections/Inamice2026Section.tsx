@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { FileText, Globe, Users, Award, MapPin, Calendar } from 'lucide-react';
 
 const Inamice2026Section = () => {
@@ -8,10 +9,12 @@ const Inamice2026Section = () => {
             <div className="relative py-20">
                 {/* Background Image & Overlay */}
                 <div className="absolute inset-4 md:inset-x-8 z-0 rounded-t-[3rem] overflow-hidden">
-                    <img
+                    <Image
                         src="/img/img207.jpg"
-                        className="w-full h-full object-cover"
                         alt="Jakarta Background"
+                        fill
+                        className="object-cover"
+                        quality={80}
                     />
                     {/* Subtle Blue Nuance Gradient */}
                     <div className="absolute inset-0 bg-gradient-to-b from-inamice-blue/60 to-transparent" />
@@ -31,11 +34,13 @@ const Inamice2026Section = () => {
                         {/* Left: Image Card */}
                         <div className="md:w-5/12">
                             <div className="rounded-tr-[5rem] rounded-bl-[5rem] rounded-tl-sm rounded-br-sm p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-xl h-full min-h-[250px] md:min-h-[300px] flex">
-                                <div className="w-full flex-1 rounded-tr-[calc(5rem-3px)] rounded-bl-[calc(5rem-3px)] rounded-tl-none rounded-br-none overflow-hidden">
-                                    <img
+                                <div className="w-full flex-1 rounded-tr-[calc(5rem-3px)] rounded-bl-[calc(5rem-3px)] rounded-tl-none rounded-br-none overflow-hidden relative">
+                                    <Image
                                         src="/img/section-inamice.jpg"
-                                        className="w-full h-full object-cover"
                                         alt="Conference"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
                                     />
                                 </div>
                             </div>
@@ -58,9 +63,9 @@ const Inamice2026Section = () => {
                 {/* Decorative Header */}
                 <div className="flex flex-col items-center mb-12">
                     <div className="flex items-center gap-1 mb-2">
-                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
-                        <img src="/img/acc-orange.jpg" alt="ornament" className="w-4 h-4 object-contain mix-blend-multiply" />
-                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-blue.jpg" alt="ornament" width={24} height={24} className="object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-orange.jpg" alt="ornament" width={16} height={16} className="object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-blue.jpg" alt="ornament" width={24} height={24} className="object-contain mix-blend-multiply" />
                     </div>
                     <div className="bg-inamice-orange text-white px-8 py-2 w-full max-w-md text-center">
                         <h3 className="text-lg md:text-xl font-bold uppercase tracking-widest">WHY THIS THEME MATTERS</h3>
@@ -70,11 +75,13 @@ const Inamice2026Section = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
                     {/* Left Image (Statue) */}
                     <div className="h-[400px] rounded-t-full p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-md">
-                        <div className="w-full h-full rounded-t-[calc(9999px-3px)] overflow-hidden">
-                            <img
+                        <div className="w-full h-full rounded-t-[calc(9999px-3px)] overflow-hidden relative">
+                            <Image
                                 src="/img/img671.jpg"
-                                className="w-full h-full object-cover"
                                 alt="Statue"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 33vw"
                             />
                         </div>
                     </div>
@@ -91,11 +98,13 @@ const Inamice2026Section = () => {
 
                     {/* Right Image (Monas) */}
                     <div className="h-[400px] rounded-t-full p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-md">
-                        <div className="w-full h-full rounded-t-[calc(9999px-3px)] overflow-hidden">
-                            <img
+                        <div className="w-full h-full rounded-t-[calc(9999px-3px)] overflow-hidden relative">
+                            <Image
                                 src="/img/img677.jpg"
-                                className="w-full h-full object-cover"
                                 alt="Monas"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 33vw"
                             />
                         </div>
                     </div>
@@ -107,17 +116,17 @@ const Inamice2026Section = () => {
                 {/* Decorative Header */}
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-12">
                     <div className="flex items-center gap-1 hidden md:flex">
-                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
-                        <img src="/img/acc-orange.jpg" alt="ornament" className="w-4 h-4 object-contain mix-blend-multiply" />
-                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-blue.jpg" alt="ornament" width={24} height={24} className="object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-orange.jpg" alt="ornament" width={16} height={16} className="object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-blue.jpg" alt="ornament" width={24} height={24} className="object-contain mix-blend-multiply" />
                     </div>
                     <div className="bg-inamice-orange text-white px-4 py-3 md:px-8 md:py-2 text-center w-full md:w-auto">
                         <h3 className="text-[15px] sm:text-lg md:text-xl font-bold uppercase tracking-widest whitespace-normal md:whitespace-nowrap">COLLABORATION WITH JAKARTA SMART CITY</h3>
                     </div>
                     <div className="flex items-center gap-1 hidden md:flex">
-                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
-                        <img src="/img/acc-orange.jpg" alt="ornament" className="w-4 h-4 object-contain mix-blend-multiply" />
-                        <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-blue.jpg" alt="ornament" width={24} height={24} className="object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-orange.jpg" alt="ornament" width={16} height={16} className="object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-blue.jpg" alt="ornament" width={24} height={24} className="object-contain mix-blend-multiply" />
                     </div>
                 </div>
 
@@ -125,10 +134,12 @@ const Inamice2026Section = () => {
                     {/* Logo Placeholder */}
                     <div className="md:w-5/12 flex justify-center">
                         <div className="flex flex-col items-center">
-                            <img
+                            <Image
                                 src="/img/jakarta-smart-city.jpg"
                                 alt="Jakarta Smart City Logo"
-                                className="w-full max-w-[320px] object-contain"
+                                width={320}
+                                height={120}
+                                className="w-full max-w-[320px] object-contain h-auto"
                             />
                         </div>
                     </div>
