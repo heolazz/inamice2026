@@ -119,8 +119,8 @@ export const AWARDS = [
     description: "Honors a Jakarta-based venue that has adopted technology integration to enhance delegate experience and operational efficiency.",
   },
   {
-    title: "Digital Neo-Finance Excellence Award",
-    description: "Awarded to a digital financial platform that delivers an outstanding transaction experience through innovative integration with event ticketing collaboration systems, excellence in seamless user navigation, secure ticket validation, and efficient payment flow.",
+    title: "Digital Ticketing Excellence Award",
+    description: "Awarded to a digital ticketing platform that offers a seamless purchasing journey, stable transaction security, and an intuitive user experience that simplifies event management for organizers.",
   },
 ];
 

@@ -24,7 +24,7 @@ const Awards = () => {
                             <h3 className="text-xl sm:text-2xl md:text-4xl font-extrabold text-inamice-blue-1 mb-3 md:mb-6 leading-tight max-w-2xl mx-auto uppercase">
                                 Awarding Session
                             </h3>
-                            <p className="text-inamice-blue-1 font-semibold text-[14px] sm:text-base md:text-[20px] leading-relaxed max-w-3xl mx-auto text-center">
+                            <p className="text-inamice-blue-1 font-semibold text-[14px] sm:text-base md:text-[20px] leading-relaxed max-w-3xl mx-auto text-justify">
                                 The awarding session aims to recognize outstanding achievements and innovations within Jakarta&rsquo;s MICE industry that align with the theme &ldquo;Empowering Jakarta&rsquo;s Smart Economy through Digital Transformation in the MICE Industry&rdquo;.
                             </p>
                         </div>
