@@ -22,14 +22,14 @@ const Articles = () => {
                     {ARTICLES.map((article, idx) => (
                         <div key={idx} className="group cursor-pointer flex flex-col h-full">
                             {/* Card Wrapper with Gradient Stroke */}
-                            <div className="p-[4px] bg-gradient-to-r from-inamice-blue to-inamice-orange rounded-tr-[2.5rem] rounded-bl-[2.5rem] rounded-tl-none rounded-br-none overflow-hidden flex flex-col shadow-md hover:shadow-xl transition-all duration-300 h-full">
+                            <div className="p-[4px] bg-gradient-to-b from-inamice-blue-1 to-inamice-orange rounded-tr-[4rem] rounded-bl-[4rem] rounded-tl-none rounded-br-none overflow-hidden flex flex-col shadow-md hover:shadow-xl transition-all duration-300 h-full">
 
-                                <div className="bg-white rounded-tr-[calc(2.5rem-4px)] rounded-bl-[calc(2.5rem-4px)] rounded-tl-none rounded-br-none overflow-hidden flex flex-col h-full">
+                                <div className="bg-white rounded-tr-[calc(4rem-4px)] rounded-bl-[calc(4rem-4px)] rounded-tl-none rounded-br-none overflow-hidden flex flex-col h-full">
                                     {/* Image Area */}
-                                    <div className="relative h-48 md:h-56 w-full overflow-hidden">
+                                    <div className="relative h-48 md:h-56 w-full overflow-hidden shrink-0 rounded-tr-[calc(4rem-4px)] rounded-tl-none rounded-br-none rounded-bl-none z-0">
                                         <img
                                             src={article.image}
-                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                            className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                                             alt={article.title}
                                             referrerPolicy="no-referrer"
                                         />
@@ -43,12 +43,12 @@ const Articles = () => {
                                         </div>
 
                                         {/* Title */}
-                                        <h3 className="text-[1rem] md:text-[1.1rem] font-bold text-inamice-blue leading-snug mb-6 group-hover:text-inamice-orange transition-colors">
+                                        <h3 className="text-[1rem] md:text-[1.1rem] font-bold text-inamice-blue-3 leading-snug mb-6 group-hover:text-inamice-orange transition-colors">
                                             {article.title}
                                         </h3>
 
                                         {/* Source */}
-                                        <span className="text-inamice-blue font-bold text-[11px] md:text-xs mt-auto text-right w-full block">
+                                        <span className="text-inamice-blue-3 font-semibold text-[11px] md:text-xs mt-auto text-right w-full block">
                                             {article.source}
                                         </span>
                                     </div>

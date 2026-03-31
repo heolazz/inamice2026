@@ -3,9 +3,9 @@ import { MapPin, Mail, Instagram, Phone, Globe, Linkedin, Users, Layout, Award, 
 
 const MoreSection = () => {
     return (
-        <section id="more" className="bg-white pt-32 lg:pt-40 pb-20">
+        <section id="more" className="bg-white pt-4 pb-20">
             {/* Contact Area with separate background */}
-            <div className="mx-4 md:mx-12 bg-gradient-to-t from-[#7CA8E8]/40 to-white pt-24 pb-20 mb-16 flex flex-col items-center rounded-b-[3rem] md:rounded-b-[5rem] shadow-sm">
+            <div className="mx-4 md:mx-12 bg-gradient-to-t from-[#7CA8E8]/40 to-white pt-16 pb-12 mb-16 flex flex-col items-center rounded-b-[3rem] md:rounded-b-[5rem] shadow-sm">
                 <div className="flex flex-col items-center justify-center px-4">
                     <div className="flex items-center gap-1 mb-5">
                         <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />

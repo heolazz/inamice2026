@@ -41,7 +41,7 @@ const Hero = () => {
                 </div>
 
                 {/* Floating Card */}
-                <div className="absolute -bottom-36 sm:-bottom-24 md:bottom-2 left-1/2 -translate-x-1/2 w-[90%] md:w-full max-w-4xl bg-white text-inamice-blue py-6 px-6 sm:px-8 md:py-7 md:px-12 rounded-tl-md rounded-br-md rounded-tr-[2rem] rounded-bl-[2rem] sm:rounded-tr-[3rem] sm:rounded-bl-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] text-center border-[3px] border-t-inamice-blue border-inamice-blue z-20 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] transition-shadow">
+                <div className="absolute -bottom-36 sm:-bottom-24 md:bottom-2 left-1/2 -translate-x-1/2 w-[90%] md:w-full max-w-4xl bg-white text-inamice-blue-1 py-6 px-6 sm:px-8 md:py-7 md:px-12 rounded-tl-md rounded-br-md rounded-tr-[2rem] rounded-bl-[2rem] sm:rounded-tr-[3rem] sm:rounded-bl-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] text-center border-[3px] border-t-inamice-blue border-inamice-blue z-20 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] transition-shadow">
                     <p className="text-[13px] sm:text-sm md:text-lg font-bold leading-relaxed px-1 sm:px-2 md:px-8 text-justify">
                         Established in 2014 by the MICE Study Program of Politeknik Negeri Jakarta with continuous support from the Ministry of Tourism and MICE industry associations, INAMICE has grown into a strategic forum for key stakeholders in the Meetings, Incentives, Conventions, and Exhibitions (MICE) industry.
                     </p>
