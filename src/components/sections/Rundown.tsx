@@ -3,14 +3,14 @@ import { RUNDOWN } from '../../constants';
 
 const Rundown = () => {
     return (
-        <section className="bg-white pb-24">
+        <section className="bg-white pb-16 md:pb-24">
             <div className="section-container max-w-5xl mx-auto">
 
                 {/* Top Blue Separator Line */}
-                <div className="w-full h-[2px] bg-[#7CA8E8] mb-16 shadow-sm"></div>
+                <div className="w-full h-[2px] bg-[#7CA8E8] mb-10 md:mb-16 shadow-sm"></div>
 
                 {/* Section Header */}
-                <div className="flex flex-col items-center mb-16">
+                <div className="flex flex-col items-center mb-10 md:mb-16">
                     <div className="flex items-center gap-1 mb-2">
                         <img src="/img/acc-blue.jpg" alt="ornament" className="w-6 h-6 object-contain mix-blend-multiply" />
                         <img src="/img/acc-orange.jpg" alt="ornament" className="w-4 h-4 object-contain mix-blend-multiply" />
@@ -21,7 +21,8 @@ const Rundown = () => {
                     </div>
                 </div>
 
-                <div className="w-full overflow-x-auto pb-4 max-w-full">
+                {/* Desktop Table (hidden on mobile) */}
+                <div className="hidden md:block w-full overflow-x-auto pb-4 max-w-full">
                     <table className="w-full min-w-[600px] text-left border-separate" style={{ borderSpacing: "4px 0" }}>
                         <thead>
                             <tr className="text-white text-center">
@@ -55,6 +56,25 @@ const Rundown = () => {
                             ))}
                         </tbody>
                     </table>
+                </div>
+
+                {/* Mobile Card Layout (visible on mobile only) */}
+                <div className="md:hidden flex flex-col gap-3">
+                    {RUNDOWN.map((item, idx) => (
+                        <div key={idx} className="border border-gray-200 rounded-xl p-4 bg-white shadow-sm">
+                            <div className="flex items-center gap-3 mb-2">
+                                <span className="text-[13px] font-bold text-white bg-gradient-to-r from-inamice-blue to-inamice-orange px-3 py-1 rounded-md whitespace-nowrap">
+                                    {item.time}
+                                </span>
+                                <span className="text-[12px] font-semibold text-gray-500">
+                                    {item.duration}
+                                </span>
+                            </div>
+                            <p className="text-[13px] text-inamice-blue-3 font-semibold leading-snug">
+                                {item.activity}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
