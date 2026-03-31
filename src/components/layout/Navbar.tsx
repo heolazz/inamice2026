@@ -125,10 +125,11 @@ const Navbar = () => {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="md:hidden p-2 text-brand-blue"
+                    className="md:hidden p-2 text-brand-blue hover:text-inamice-orange transition-colors"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    aria-label="Toggle Menu"
                 >
-                    {isMobileMenuOpen ? <X /> : <Menu />}
+                    {isMobileMenuOpen ? <X size={28} strokeWidth={2.5} /> : <Menu size={28} strokeWidth={2.5} />}
                 </button>
             </div>
 
@@ -136,36 +137,45 @@ const Navbar = () => {
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
+                        initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        className="absolute top-full left-0 right-0 bg-white shadow-xl p-6 flex flex-col gap-5 md:hidden border-t border-slate-100"
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute top-full left-0 right-0 bg-white shadow-[0_15px_30px_-10px_rgba(0,0,0,0.1)] flex flex-col md:hidden border-t border-slate-100 origin-top"
                     >
-                        {NAVIGATION.map((item) => (
-                            <div key={item.name} className="flex flex-col gap-2">
-                                <Link
-                                    href={item.href}
-                                    onClick={() => !item.subItems && setIsMobileMenuOpen(false)}
-                                    className={`text-base font-bold p-2 ${isActive(item.href) ? 'text-brand-orange px-6 py-2 bg-brand-active-bg rounded-full w-fit' : 'text-brand-blue'}`}
-                                >
-                                    {item.name}
-                                </Link>
-                                {item.subItems && (
-                                    <div className="flex flex-col gap-3 pl-6 mt-1">
-                                        {item.subItems.map((sub, idx) => (
-                                            <Link
-                                                key={idx}
-                                                href={sub.href}
-                                                onClick={() => setIsMobileMenuOpen(false)}
-                                                className="text-brand-blue/80 font-bold text-sm"
-                                            >
-                                                {sub.name}
-                                            </Link>
-                                        ))}
-                                    </div>
-                                )}
-                            </div>
-                        ))}
+                        <div className="p-6 md:p-8 flex flex-col gap-4 max-h-[85vh] overflow-y-auto">
+                            {NAVIGATION.map((item) => (
+                                <div key={item.name} className="flex flex-col gap-1">
+                                    <Link
+                                        href={item.href}
+                                        onClick={() => !item.subItems && setIsMobileMenuOpen(false)}
+                                        className={`text-lg font-extrabold px-4 py-3 rounded-xl transition-colors ${isActive(item.href)
+                                            ? 'text-inamice-orange bg-brand-active-bg'
+                                            : 'text-brand-blue hover:bg-slate-50'
+                                            }`}
+                                    >
+                                        {item.name}
+                                    </Link>
+                                    {item.subItems && (
+                                        <div className="flex flex-col gap-1 mt-1 pl-4 border-l-2 border-slate-100 ml-6">
+                                            {item.subItems.map((sub, idx) => (
+                                                <Link
+                                                    key={idx}
+                                                    href={sub.href}
+                                                    onClick={() => setIsMobileMenuOpen(false)}
+                                                    className={`font-semibold text-[15px] py-2 px-4 rounded-lg transition-colors ${isActive(sub.href)
+                                                        ? 'text-inamice-orange bg-brand-active-bg'
+                                                        : 'text-brand-blue/70 hover:bg-slate-50 hover:text-brand-blue'
+                                                        }`}
+                                                >
+                                                    {sub.name}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>
