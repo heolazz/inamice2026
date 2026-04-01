@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Montserrat, Playfair_Display } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({
+const montserrat = Montserrat({
     subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700', '800'],
+    weight: ['300', '400', '500', '600', '700', '800', '900'],
     display: 'swap',
     variable: '--font-sans',
 });
@@ -36,7 +36,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={`scroll-smooth ${inter.variable} ${playfair.variable}`}>
+        <html lang="en" className={`scroll-smooth ${montserrat.variable} ${playfair.variable}`}>
             <body className="antialiased font-sans text-slate-900 bg-inamice-bg">
                 <div className="min-h-screen flex flex-col">
                     <Navbar />
