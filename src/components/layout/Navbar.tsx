@@ -150,7 +150,7 @@ const Navbar = () => {
                                         href={item.href}
                                         onClick={() => !item.subItems && setIsMobileMenuOpen(false)}
                                         className={`text-lg font-extrabold px-4 py-3 rounded-xl transition-colors ${isActive(item.href)
-                                            ? 'text-inamice-orange bg-brand-active-bg'
+                                            ? 'text-inamice-blue-2 bg-brand-active-bg'
                                             : 'text-brand-blue hover:bg-slate-50'
                                             }`}
                                     >
@@ -164,7 +164,7 @@ const Navbar = () => {
                                                     href={sub.href}
                                                     onClick={() => setIsMobileMenuOpen(false)}
                                                     className={`font-semibold text-[15px] py-2 px-4 rounded-lg transition-colors ${isActive(sub.href)
-                                                        ? 'text-inamice-orange bg-brand-active-bg'
+                                                        ? 'text-inamice-blue-2 bg-brand-active-bg'
                                                         : 'text-brand-blue/70 hover:bg-slate-50 hover:text-brand-blue'
                                                         }`}
                                                 >
