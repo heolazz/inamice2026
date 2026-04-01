@@ -8,7 +8,7 @@ const icons = [<Settings key="settings" size={48} />, <Globe key="globe" size={4
 const Throwback = () => {
     return (
         <section id="about" className="relative pt-44 sm:pt-32 md:pt-24 text-white bg-gradient-to-b from-inamice-blue to-white">
-            <div className="relative z-10 section-container">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-24">
                 {/* Header Section */}
                 <div className="flex flex-col lg:flex-row justify-between items-start mb-16 gap-12">
                     <div className="lg:w-1/3">
@@ -35,7 +35,7 @@ const Throwback = () => {
                         Swipe <ChevronRight size={16} />
                     </div>
 
-                    <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto md:overflow-visible pb-12 scrollbar-hide snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0">
+                    <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto md:overflow-visible pb-24 scrollbar-hide snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0">
                         {THROWBACK_EVENTS.map((event, idx) => (
                             <div key={event.year} className="min-w-[85vw] sm:min-w-[350px] md:min-w-full snap-center">
                                 <AnimatedCard
