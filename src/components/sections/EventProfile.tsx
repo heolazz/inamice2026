@@ -2,10 +2,10 @@ import React from 'react';
 
 const EventProfile = () => {
     return (
-        <section className="bg-white py-14 md:py-24 relative">
-            <div className="section-container">
+        <section className="bg-white pt-4 md:pt-8 pb-14 md:pb-24 relative">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Top Part: Title and Info Cards */}
-                <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-12 mb-14 md:mb-24">
+                <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-12 mb-16 md:mb-36">
                     {/* Left Title */}
                     <div className="md:w-1/4 flex flex-col justify-center items-center md:items-start whitespace-nowrap">
                         <h2 className="text-4xl md:text-[3.5rem] font-extrabold text-inamice-blue-3 uppercase leading-[1.1] tracking-tighter text-center md:text-left drop-shadow-sm">
