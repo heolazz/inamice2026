@@ -21,6 +21,7 @@ const Hero = () => {
                             alt="INAMICE 2026 Event"
                             fill
                             className="object-cover blur-[2px] opacity-70 mix-blend-luminosity"
+                            sizes="100vw"
                             priority
                         />
                     </div>
