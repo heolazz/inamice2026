@@ -78,6 +78,7 @@ const Navbar = () => {
                                     }`}
                             >
                                 {item.name}
+                                {(item as any).seoSuffix && <span className="sr-only">{(item as any).seoSuffix}</span>}
                             </Link>
 
                             {/* Dropdown Menu */}
@@ -155,6 +156,7 @@ const Navbar = () => {
                                             }`}
                                     >
                                         {item.name}
+                                        {(item as any).seoSuffix && <span className="sr-only">{(item as any).seoSuffix}</span>}
                                     </Link>
                                     {item.subItems && (
                                         <div className="flex flex-col gap-1 mt-1 pl-4 border-l-2 border-slate-100 ml-6">

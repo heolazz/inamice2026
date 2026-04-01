@@ -18,7 +18,7 @@ export const NAVIGATION = [
     ]
   },
   { name: "Article", href: "/article" },
-  { name: "More", href: "/more" },
+  { name: "More", href: "/more", seoSuffix: " About INAMICE" },
   { name: "Registration", href: "/registration", isButton: true },
 ];
 
