@@ -117,18 +117,22 @@ const Inamice2026Section = () => {
 
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                     {[
-                        { icon: <ClipboardList size={28} />, text: "To position the MICE industry as a strategic contributor to Jakarta\u2019s Smart Economy" },
-                        { icon: <Lightbulb size={28} />, text: "To align perspectives between policy enablers and the MICE ecosystem" },
-                        { icon: <Target size={28} />, text: "To explore practical directions for digital transformation in the MICE industry" },
-                        { icon: <Network size={28} />, text: "To strengthen collaboration among government, industry, and academia" }
+                        { icon: "/icon-materi/objective_1.png", text: "To position the MICE industry as a strategic contributor to Jakarta\u2019s Smart Economy" },
+                        { icon: "/icon-materi/objective_2.png", text: "To align perspectives between policy enablers and the MICE ecosystem" },
+                        { icon: "/icon-materi/objective_3.png", text: "To explore practical directions for digital transformation in the MICE industry" },
+                        { icon: "/icon-materi/objective_4.png", text: "To strengthen collaboration among government, industry, and academia" }
                     ].map((item, idx) => (
-                        <div key={idx} className="bg-white border-[3px] border-inamice-blue rounded-tr-[2.5rem] rounded-bl-[2.5rem] md:rounded-tr-[3.5rem] md:rounded-bl-[3.5rem] rounded-tl-none rounded-br-none p-5 pt-12 md:p-8 md:pt-16 flex flex-col items-center text-center h-full hover:shadow-xl transition-all relative overflow-hidden group">
+                        <div key={idx} className="bg-white border-[3px] border-inamice-blue rounded-tr-[2.5rem] rounded-bl-[2.5rem] md:rounded-tr-[3.5rem] md:rounded-bl-[3.5rem] rounded-tl-none rounded-br-none px-4 pt-14 pb-6 md:px-6 md:pt-20 md:pb-8 flex flex-col items-center text-center h-full hover:shadow-xl transition-all relative overflow-hidden group">
                             {/* Orange Icon Box at Top Left */}
-                            <div className="absolute top-0 left-0 bg-inamice-orange text-white p-3 md:p-4 rounded-br-2xl shadow-sm">
-                                {item.icon}
+                            <div className="absolute top-0 left-0 bg-inamice-orange text-white p-1.5 md:p-2.5 rounded-br-xl shadow-sm">
+                                <img
+                                    src={item.icon}
+                                    alt={`Objective ${idx + 1}`}
+                                    className="w-7 h-7 md:w-10 md:h-10 object-contain"
+                                />
                             </div>
 
-                            <p className="text-inamice-blue-3 font-extrabold text-[13px] md:text-[15px] leading-relaxed flex-grow flex items-center">
+                            <p className="text-inamice-blue-3 font-bold text-[13px] md:text-[15px] leading-relaxed flex-grow flex items-center justify-center">
                                 {item.text}
                             </p>
                         </div>
@@ -138,15 +142,25 @@ const Inamice2026Section = () => {
 
             {/* 4. Date & Venue Section */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-16 md:pb-32">
-                {/* Decorative Header */}
-                <div className="flex flex-col items-center mb-10 md:mb-16">
-                    <div className="flex items-center gap-1 mb-2">
-                        <Image src="/img/acc-blue.jpg" alt="ornament" width={24} height={24} className="object-contain mix-blend-multiply" />
-                        <Image src="/img/acc-orange.jpg" alt="ornament" width={16} height={16} className="object-contain mix-blend-multiply" />
-                        <Image src="/img/acc-blue.jpg" alt="ornament" width={24} height={24} className="object-contain mix-blend-multiply" />
+                {/* Decorative Header (Side-by-side Ornaments) */}
+                <div className="flex items-center justify-center gap-2 md:gap-6 mb-10 md:mb-16">
+                    {/* Left Ornaments */}
+                    <div className="flex items-center gap-0.5 md:gap-1 flex-shrink-0">
+                        <Image src="/img/acc-blue.jpg" alt="ornament" width={20} height={20} className="w-4 h-4 md:w-6 md:h-6 object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-orange.jpg" alt="ornament" width={14} height={14} className="w-3 h-3 md:w-4 md:h-4 object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-blue.jpg" alt="ornament" width={20} height={20} className="w-4 h-4 md:w-6 md:h-6 object-contain mix-blend-multiply" />
                     </div>
-                    <div className="bg-inamice-orange text-white px-8 py-2 w-full max-w-lg text-center shadow-md">
-                        <h3 className="text-lg md:text-2xl font-bold uppercase tracking-[0.2em]">DATE & VENUE</h3>
+
+                    {/* Orange Bar (Lengthened) */}
+                    <div className="bg-inamice-orange text-white px-8 sm:px-12 md:px-24 py-2 md:py-2.5 w-full max-w-lg sm:max-w-xl md:max-w-2xl text-center shadow-md">
+                        <h3 className="text-sm sm:text-lg md:text-2xl font-bold uppercase tracking-[0.2em] whitespace-nowrap">DATE & VENUE</h3>
+                    </div>
+
+                    {/* Right Ornaments */}
+                    <div className="flex items-center gap-0.5 md:gap-1 flex-shrink-0">
+                        <Image src="/img/acc-blue.jpg" alt="ornament" width={20} height={20} className="w-4 h-4 md:w-6 md:h-6 object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-orange.jpg" alt="ornament" width={14} height={14} className="w-3 h-3 md:w-4 md:h-4 object-contain mix-blend-multiply" />
+                        <Image src="/img/acc-blue.jpg" alt="ornament" width={20} height={20} className="w-4 h-4 md:w-6 md:h-6 object-contain mix-blend-multiply" />
                     </div>
                 </div>
 
@@ -177,25 +191,25 @@ const Inamice2026Section = () => {
                 </div>
 
                 {/* Bottom Images in Arches */}
-                <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-10 max-w-6xl mx-auto">
+                <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-8 max-w-3xl mx-auto">
                     {/* Arion Suites Kemang Image */}
-                    <div className="h-[200px] sm:h-[300px] md:h-[615px] w-full overflow-hidden relative">
+                    <div className="aspect-[3/4] w-full overflow-hidden relative">
                         <Image
                             src="/img/venue.webp"
                             alt="Arion Suites Kemang"
                             fill
-                            className="object-cover"
+                            className="object-contain"
                             sizes="(max-width: 768px) 50vw, 50vw"
                         />
                     </div>
 
                     {/* Diamond Ballroom Image */}
-                    <div className="h-[200px] sm:h-[300px] md:h-[615px] w-full overflow-hidden relative">
+                    <div className="aspect-[3/4] w-full overflow-hidden relative">
                         <Image
                             src="/img/venue2.webp"
                             alt="Diamond Ballroom"
                             fill
-                            className="object-cover"
+                            className="object-contain"
                             sizes="(max-width: 768px) 50vw, 50vw"
                         />
                     </div>
