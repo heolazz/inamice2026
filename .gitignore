@@ -10,6 +10,9 @@ coverage/
 # Next.js build output
 .next/
 
+# lighthouse
+lighthouse-test*.json
+
 # File & Folder referensi UI Design
 DesignAcuan Web/
 Design Web UI_*
