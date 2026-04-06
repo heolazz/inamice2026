@@ -72,22 +72,22 @@ const Inamice2026Section = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-6 md:gap-8 md:items-end">
+                <div className="flex flex-col md:grid md:gap-8 md:items-stretch" style={{ gridTemplateColumns: '3fr 4fr 3fr' }}>
                     {/* Left Image (Statue) */}
-                    <div className="order-1 h-[280px] md:h-[400px] rounded-t-full p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-md max-w-[280px] md:max-w-none mx-auto w-full">
-                        <div className="w-full h-full rounded-t-[calc(9999px-3px)] overflow-hidden relative">
+                    <div className="order-1 h-[280px] md:h-auto md:min-h-[300px] rounded-t-full p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-md max-w-[280px] md:max-w-none mx-auto w-full flex">
+                        <div className="w-full flex-1 rounded-t-[calc(9999px-3px)] overflow-hidden relative">
                             <Image
                                 src="/img/img671.jpg"
                                 alt="Statue"
                                 fill
                                 className="object-cover"
-                                sizes="(max-width: 768px) 100vw, 33vw"
+                                sizes="(max-width: 768px) 100vw, 30vw"
                             />
                         </div>
                     </div>
 
                     {/* Center Text */}
-                    <div className="order-2 text-inamice-blue-3 space-y-4 md:space-y-6 text-justify leading-relaxed font-semibold text-[14px] md:text-[15px]">
+                    <div className="order-2 text-inamice-blue-3 space-y-4 md:space-y-5 text-justify leading-relaxed font-semibold text-[15px] md:text-base flex flex-col justify-center py-2">
                         <p>
                             According to the RPJPD 2025&ndash;2045, Jakarta aims to become a Global City with Smart Economy as a key direction. As Indonesia&rsquo;s largest economic contributor, its economy is driven by service sectors based on mobility, interaction, and business activity. The MICE industry connects these sectors and shows strong economic potential through its projected growth.
                         </p>
@@ -97,14 +97,14 @@ const Inamice2026Section = () => {
                     </div>
 
                     {/* Right Image (Monas) */}
-                    <div className="order-3 h-[280px] md:h-[400px] rounded-t-full p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-md max-w-[280px] md:max-w-none mx-auto w-full">
-                        <div className="w-full h-full rounded-t-[calc(9999px-3px)] overflow-hidden relative">
+                    <div className="order-3 h-[280px] md:h-auto md:min-h-[300px] rounded-t-full p-[3px] bg-gradient-to-r from-inamice-blue to-inamice-orange shadow-md max-w-[280px] md:max-w-none mx-auto w-full flex">
+                        <div className="w-full flex-1 rounded-t-[calc(9999px-3px)] overflow-hidden relative">
                             <Image
                                 src="/img/img677.jpg"
                                 alt="Monas"
                                 fill
                                 className="object-cover"
-                                sizes="(max-width: 768px) 100vw, 33vw"
+                                sizes="(max-width: 768px) 100vw, 30vw"
                             />
                         </div>
                     </div>
@@ -122,7 +122,7 @@ const Inamice2026Section = () => {
                         { icon: "/icon-materi/objective_3.png", text: "To explore practical directions for digital transformation in the MICE industry" },
                         { icon: "/icon-materi/objective_4.png", text: "To strengthen collaboration among government, industry, and academia" }
                     ].map((item, idx) => (
-                        <div key={idx} className="bg-white border-[3px] border-inamice-blue rounded-tr-[2.5rem] rounded-bl-[2.5rem] md:rounded-tr-[3.5rem] md:rounded-bl-[3.5rem] rounded-tl-none rounded-br-none px-4 pt-14 pb-6 md:px-6 md:pt-20 md:pb-8 flex flex-col items-center text-center h-full hover:shadow-xl transition-all relative overflow-hidden group">
+                        <div key={idx} className="aspect-square md:aspect-auto bg-white border-[3px] border-inamice-blue rounded-tr-[1.5rem] rounded-bl-[1.5rem] md:rounded-tr-[3.5rem] md:rounded-bl-[3.5rem] rounded-tl-none rounded-br-none px-3 pt-10 pb-4 md:px-6 md:pt-20 md:pb-8 flex flex-col items-center text-center h-full hover:shadow-xl transition-all relative overflow-hidden group">
                             {/* Orange Icon Box at Top Left */}
                             <div className="absolute top-0 left-0 bg-inamice-orange text-white p-1.5 md:p-2.5 rounded-br-xl shadow-sm">
                                 <img
