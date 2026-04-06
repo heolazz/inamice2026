@@ -3,7 +3,7 @@ import { RUNDOWN } from '../../constants';
 
 const Rundown = () => {
     return (
-        <section className="bg-white pb-16 md:pb-24">
+        <section id="rundown" className="bg-white pb-16 md:pb-24">
             <div className="section-container max-w-5xl mx-auto">
 
                 {/* Top Blue Separator Line */}
