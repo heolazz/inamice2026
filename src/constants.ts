@@ -96,12 +96,12 @@ export const SPEAKERS = [
 ];
 
 export const RUNDOWN = [
-  { time: "7:30 - 8:15", duration: "0:45:00", activity: "Re-registration Delegates" },
+  { time: "7:30 - 8:15", duration: "0:45:00", activity: "Delegates Re-registration & Coffee Break" },
   { time: "8:15 - 8:45", duration: "0:30:00", activity: "Opening Ceremony" },
-  { time: "8:45 - 8:55", duration: "0:10:00", activity: "Keynote Speech 'Positioning MICE as a Strategic Lever for Jakarta's Urban Economy'" },
-  { time: "8:55 - 10:15", duration: "1:20:00", activity: "Plenary Session 1 — 'Reframing MICE as a Strategic Driver of Urban Economic Growth'" },
+  { time: "8:45 - 8:55", duration: "0:10:00", activity: "Keynote Speech \u201CPositioning MICE as a Strategic Lever for Jakarta\u2019s Urban Economy\u201D" },
+  { time: "8:55 - 10:15", duration: "1:20:00", activity: "Plenary Session 1 \u2014 \u201CBuilding Smart Economy Foundations: Digital Transformation, Policy Alignment, and Sectoral Contribution\u201D" },
   { time: "10:15 - 10:35", duration: "0:20:00", activity: "Coffee Break & Brand Presentation by Sponsor" },
-  { time: "10:35 - 11:55", duration: "1:20:00", activity: "Plenary Session 2 — 'Implementing Smart Economy through MICE: Moving from Concept to Practice'" },
+  { time: "10:35 - 11:55", duration: "1:20:00", activity: "Plenary Session 2 \u2014 \u201CImplementing Smart Economy Practices in the MICE Ecosystem\u201D" },
   { time: "11:55 - 12:15", duration: "0:20:00", activity: "Brand Presentation by Sponsor" },
   { time: "12:15 - 13:15", duration: "1:00:00", activity: "Lunch & Networking Session (Business Talk)" },
   { time: "13:15 - 13:35", duration: "0:20:00", activity: "Brand Presentation by Sponsor" },
