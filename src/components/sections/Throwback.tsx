@@ -21,7 +21,7 @@ const Throwback = () => {
                         </h2>
                     </div>
                     <div className="lg:w-2/3">
-                        <p className="text-lg md:text-xl leading-relaxed opacity-95 text-justify font-medium">
+                        <p className="text-md md:text-lg leading-relaxed opacity-95 text-justify font-medium">
                             As an annual platform, INAMICE fosters collaboration between government, industry,
                             associations, and academic institutions to strengthen Indonesia's MICE ecosystem.
                             Each year, INAMICE adopts themes and discussions that reflect the most relevant and
