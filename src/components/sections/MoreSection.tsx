@@ -76,7 +76,7 @@ const MoreSection = () => {
                                 <h3 className="font-extrabold text-sm md:text-base tracking-widest uppercase">ORGANIZED BY</h3>
                             </div>
 
-                            <img src="/img/logo-mice.png" alt="MICE" className="w-48 sm:w-60 md:w-72 mb-8 md:mb-12 rounded-md" />
+                            <img src="/logo/logo-mice-new.jpg" alt="MICE" className="w-48 sm:w-60 md:w-72 mb-8 md:mb-12 rounded-md" />
 
                             {/* Social Grid MICE */}
                             <div className="grid grid-cols-3 gap-x-6 gap-y-5 sm:gap-x-8 sm:gap-y-8 md:gap-x-16 md:gap-y-10">
