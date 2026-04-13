@@ -20,6 +20,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
     title: 'INAMICE 2026 — Indonesia MICE Conference and Exhibition',
     description: 'Empowering Jakarta\'s Smart Economy through Digital Transformation in the MICE Industry. Join us June 17th 2026 for the premier Meetings, Incentives, Conventions, and Exhibitions event.',
+    icons: {
+        icon: '/logo/logo-web.png',
+    },
     openGraph: {
         title: 'INAMICE 2026 — Indonesia MICE Conference and Exhibition',
         description: 'Empowering Jakarta\'s Smart Economy through Digital Transformation in the MICE Industry.',
