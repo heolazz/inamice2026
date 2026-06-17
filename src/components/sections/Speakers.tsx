@@ -89,24 +89,24 @@ const Speakers = () => {
                         moving into the implementation stage. This session discusses how Digital Transformation, industry perspective, and sectoral contribution form the main foundation in building a Smart Economy in the MICE Industry.
                     </p>
 
-                    {/* Desktop: Original 3-column grid */}
-                    <div className="hidden md:grid md:grid-cols-3 gap-16 w-full max-w-7xl mx-auto">
+                    {/* Desktop: 4-column grid for Plenary 1 */}
+                    <div className="hidden md:grid lg:grid-cols-4 md:grid-cols-2 gap-6 xl:gap-8 w-full max-w-[1400px] mx-auto px-4">
                         {plenary1.map((speaker, idx) => (
                             <div key={speaker.name} className="flex flex-col items-center flex-1 h-full">
                                 <div className="h-[60px] flex items-center justify-center w-full mb-2">
-                                    <div className="bg-inamice-orange text-white px-8 py-2 text-center shadow-md">
-                                        <h4 className="text-xl font-bold uppercase drop-shadow-md tracking-widest whitespace-nowrap">SUBTOPIC {idx + 1}</h4>
+                                    <div className="bg-inamice-orange text-white px-4 xl:px-8 py-2 text-center shadow-md">
+                                        <h4 className="text-lg xl:text-xl font-bold uppercase drop-shadow-md tracking-widest whitespace-nowrap">SUBTOPIC {idx + 1}</h4>
                                     </div>
                                 </div>
                                 <div className="px-2 text-center mb-6 h-[100px] flex items-center justify-center w-full">
-                                    <p className="text-inamice-blue-3 text-[18px] font-bold leading-snug max-w-[360px] mx-auto">&quot;{speaker.topic}&quot;</p>
+                                    <p className="text-inamice-blue-3 text-[15px] xl:text-[18px] font-bold leading-snug max-w-[360px] mx-auto">&quot;{speaker.topic}&quot;</p>
                                 </div>
-                                <div className="flex flex-col items-center">
-                                    <div className="relative w-[280px] h-[350px] mb-6">
+                                <div className="flex flex-col items-center w-full max-w-[280px]">
+                                    <div className="relative w-full aspect-[4/5] mb-6">
                                         <div className="absolute inset-0 bg-gradient-to-r from-inamice-blue to-inamice-orange rounded-tr-[4rem] rounded-bl-[4rem] rounded-tl-none rounded-br-none" />
                                         <div className="absolute inset-[6px] bg-white rounded-tr-[calc(4rem-6px)] rounded-bl-[calc(4rem-6px)] rounded-tl-none rounded-br-none overflow-hidden flex items-center justify-center">
                                             {speaker.image && speaker.image !== "/img/speakers/tba.png" ? (
-                                                <img src={speaker.image} alt={speaker.name} className="w-full h-full object-cover" />
+                                                <img src={speaker.image} alt={speaker.name} className={`w-full h-full object-cover ${(speaker as any).imageClassName || ""}`} />
                                             ) : (
                                                 <div className="flex flex-col items-center scale-90">
                                                     <svg className="w-20 h-20 text-inamice-blue/20 mb-2" fill="currentColor" viewBox="0 0 24 24"><path fillRule="evenodd" d="M12 2A5 5 0 1012 12a5 5 0 000-10zM5.006 20.448C6.183 17.5 9.1 16 12 16s5.817 1.5 6.994 4.448A10.957 10.957 0 0112 23c-2.485 0-4.783-.824-6.994-2.552z" clipRule="evenodd" /></svg>
@@ -115,10 +115,14 @@ const Speakers = () => {
                                             )}
                                         </div>
                                     </div>
-                                    <div className="w-[280px] bg-inamice-orange text-white py-3 px-2 mb-4 text-center min-h-[60px] flex flex-col justify-center">
-                                        <h4 className="text-[14px] md:text-[16px] font-bold uppercase tracking-wide whitespace-normal leading-tight">{speaker.name}</h4>
-                                        {speaker.role && speaker.role !== "TBA" && <p className="text-[12px] mt-1 text-white/90 leading-tight">{speaker.role}</p>}
+                                    <div className="w-full bg-inamice-orange text-white py-3 px-2 text-center h-[60px] md:h-[76px] xl:h-[84px] flex flex-col justify-center">
+                                        <h4 className="text-[13px] md:text-[15px] xl:text-[16px] font-bold uppercase tracking-wide whitespace-normal leading-tight drop-shadow-md">{speaker.name}</h4>
                                     </div>
+                                    {speaker.role && speaker.role !== "TBA" && (
+                                        <div className="w-full mt-4 px-2 text-center mb-4">
+                                            <p className="text-inamice-blue-3 font-semibold text-[13px] md:text-[14px] leading-snug">{speaker.role}</p>
+                                        </div>
+                                    )}
                                     <div className="h-4"></div>
                                 </div>
                             </div>
@@ -135,7 +139,7 @@ const Speakers = () => {
                                         <div className="absolute inset-0 bg-gradient-to-b from-inamice-blue to-inamice-orange rounded-tr-[1.2rem] rounded-bl-[1.2rem] rounded-tl-none rounded-br-none" />
                                         <div className="absolute inset-[3px] bg-white rounded-tr-[calc(1.2rem-3px)] rounded-bl-[calc(1.2rem-3px)] rounded-tl-none rounded-br-none overflow-hidden flex items-center justify-center">
                                             {speaker.image && speaker.image !== "/img/speakers/tba.png" ? (
-                                                <img src={speaker.image} alt={speaker.name} className="w-full h-full object-cover" />
+                                                <img src={speaker.image} alt={speaker.name} className={`w-full h-full object-cover ${(speaker as any).imageClassName || ""}`} />
                                             ) : (
                                                 <div className="flex flex-col items-center">
                                                     <svg className="w-10 h-10 text-inamice-blue/20 mb-1" fill="currentColor" viewBox="0 0 24 24"><path fillRule="evenodd" d="M12 2A5 5 0 1012 12a5 5 0 000-10zM5.006 20.448C6.183 17.5 9.1 16 12 16s5.817 1.5 6.994 4.448A10.957 10.957 0 0112 23c-2.485 0-4.783-.824-6.994-2.552z" clipRule="evenodd" /></svg>
@@ -173,24 +177,24 @@ const Speakers = () => {
                         into real practices within the MICE ecosystem.
                     </p>
 
-                    {/* Desktop: Original 3-column grid */}
-                    <div className="hidden md:grid md:grid-cols-3 gap-16 w-full max-w-7xl mx-auto">
+                    {/* Desktop: 3-column grid for Plenary 2 */}
+                    <div className="hidden md:grid md:grid-cols-3 gap-8 xl:gap-16 w-full max-w-7xl mx-auto px-4">
                         {plenary2.map((speaker, idx) => (
                             <div key={idx} className="flex flex-col items-center flex-1 h-full">
                                 <div className="h-[60px] flex items-center justify-center w-full mb-2">
-                                    <div className="bg-inamice-orange text-white px-8 py-2 text-center shadow-md">
-                                        <h4 className="text-xl font-bold uppercase drop-shadow-md tracking-widest whitespace-nowrap">SUBTOPIC {idx + 1}</h4>
+                                    <div className="bg-inamice-orange text-white px-4 xl:px-8 py-2 text-center shadow-md">
+                                        <h4 className="text-lg xl:text-xl font-bold uppercase drop-shadow-md tracking-widest whitespace-nowrap">SUBTOPIC {idx + 1}</h4>
                                     </div>
                                 </div>
                                 <div className="px-2 text-center mb-6 h-[100px] flex items-center justify-center w-full">
-                                    <p className="text-inamice-blue-3 text-[18px] font-bold leading-snug max-w-[360px] mx-auto">&quot;{speaker.topic}&quot;</p>
+                                    <p className="text-inamice-blue-3 text-[15px] xl:text-[18px] font-bold leading-snug max-w-[360px] mx-auto">&quot;{speaker.topic}&quot;</p>
                                 </div>
-                                <div className="flex flex-col items-center">
-                                    <div className="relative w-[280px] h-[350px] mb-6">
+                                <div className="flex flex-col items-center w-full max-w-[280px]">
+                                    <div className="relative w-full aspect-[4/5] mb-6">
                                         <div className="absolute inset-0 bg-gradient-to-r from-inamice-blue to-inamice-orange rounded-tr-[4rem] rounded-bl-[4rem] rounded-tl-none rounded-br-none" />
                                         <div className="absolute inset-[6px] bg-white rounded-tr-[calc(4rem-6px)] rounded-bl-[calc(4rem-6px)] rounded-tl-none rounded-br-none overflow-hidden flex items-center justify-center">
                                             {speaker.image && speaker.image !== "/img/speakers/tba.png" ? (
-                                                <img src={speaker.image} alt={speaker.name} className="w-full h-full object-cover" />
+                                                <img src={speaker.image} alt={speaker.name} className={`w-full h-full object-cover ${(speaker as any).imageClassName || ""}`} />
                                             ) : (
                                                 <div className="flex flex-col items-center scale-90">
                                                     <svg className="w-20 h-20 text-inamice-blue/20 mb-2" fill="currentColor" viewBox="0 0 24 24"><path fillRule="evenodd" d="M12 2A5 5 0 1012 12a5 5 0 000-10zM5.006 20.448C6.183 17.5 9.1 16 12 16s5.817 1.5 6.994 4.448A10.957 10.957 0 0112 23c-2.485 0-4.783-.824-6.994-2.552z" clipRule="evenodd" /></svg>
@@ -199,10 +203,14 @@ const Speakers = () => {
                                             )}
                                         </div>
                                     </div>
-                                    <div className="w-[280px] bg-inamice-orange text-white py-3 px-2 mb-4 text-center min-h-[60px] flex flex-col justify-center">
-                                        <h4 className="text-[14px] md:text-[16px] font-bold uppercase tracking-wide whitespace-normal leading-tight">{speaker.name}</h4>
-                                        {speaker.role && speaker.role !== "TBA" && <p className="text-[12px] mt-1 text-white/90 leading-tight">{speaker.role}</p>}
+                                    <div className="w-full bg-inamice-orange text-white py-3 px-2 text-center h-[60px] md:h-[76px] xl:h-[84px] flex flex-col justify-center">
+                                        <h4 className="text-[13px] md:text-[15px] xl:text-[16px] font-bold uppercase tracking-wide whitespace-normal leading-tight drop-shadow-md">{speaker.name}</h4>
                                     </div>
+                                    {speaker.role && speaker.role !== "TBA" && (
+                                        <div className="w-full mt-4 px-2 text-center mb-4">
+                                            <p className="text-inamice-blue-3 font-semibold text-[13px] md:text-[14px] leading-snug">{speaker.role}</p>
+                                        </div>
+                                    )}
                                     <div className="h-4"></div>
                                 </div>
                             </div>
@@ -219,7 +227,7 @@ const Speakers = () => {
                                         <div className="absolute inset-0 bg-gradient-to-b from-inamice-blue to-inamice-orange rounded-tr-[1.2rem] rounded-bl-[1.2rem] rounded-tl-none rounded-br-none" />
                                         <div className="absolute inset-[3px] bg-white rounded-tr-[calc(1.2rem-3px)] rounded-bl-[calc(1.2rem-3px)] rounded-tl-none rounded-br-none overflow-hidden flex items-center justify-center">
                                             {speaker.image && speaker.image !== "/img/speakers/tba.png" ? (
-                                                <img src={speaker.image} alt={speaker.name} className="w-full h-full object-cover" />
+                                                <img src={speaker.image} alt={speaker.name} className={`w-full h-full object-cover ${(speaker as any).imageClassName || ""}`} />
                                             ) : (
                                                 <div className="flex flex-col items-center">
                                                     <svg className="w-10 h-10 text-inamice-blue/20 mb-1" fill="currentColor" viewBox="0 0 24 24"><path fillRule="evenodd" d="M12 2A5 5 0 1012 12a5 5 0 000-10zM5.006 20.448C6.183 17.5 9.1 16 12 16s5.817 1.5 6.994 4.448A10.957 10.957 0 0112 23c-2.485 0-4.783-.824-6.994-2.552z" clipRule="evenodd" /></svg>
